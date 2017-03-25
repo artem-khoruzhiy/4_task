@@ -46,11 +46,11 @@ public class TestTvsOnOnliner extends BaseTest {
         tvPage.setProducer(producer);
         tvPage.setMinDiagonal(minDiag);
         tvPage.setMaxDiagonal(maxDiag);
-//        try {
-//            Thread.sleep(4000);
-//        }catch (Exception e){
-//            e.printStackTrace();
-//        }
+        try {
+            Thread.sleep(4000);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         List<String> list1 = tvPage.getListOfLinks();
         for (String s : list1){
             browser.getDriver().get(s);
